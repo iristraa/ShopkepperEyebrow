@@ -66,13 +66,13 @@ bool ShopkepperLayer::init() {
 }
 
 void ShopkepperLayer::keyBackClicked() {
+    FMODAudioEngine::sharedEngine()->stopAllMusic();
+    FMODAudioEngine::sharedEngine()->playMusic("menuLoop.mp3", 1, 1, 1);
     CCDirector::sharedDirector()->popSceneWithTransition(0.5f, PopTransition::kPopTransitionFade);
 }
 
 
 void ShopkepperLayer::onBack(CCObject* object) {
-    FMODAudioEngine::sharedEngine()->stopAllMusic();
-    FMODAudioEngine::sharedEngine()->playMusic("menuLoop.mp3", 1, 1, 1);
     keyBackClicked();
 }
 
