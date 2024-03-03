@@ -4,4 +4,6 @@ Replaces the unfinished GD content popups (Versus mode, Events and the Map) with
 
 Also available on every platform.
 
+Original mod by user666.
+
 Made purely out of ~~love~~ spite.
